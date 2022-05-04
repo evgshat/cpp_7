@@ -3,10 +3,11 @@
 
 #include <iostream>
 
-template <class T, class U, class V>
-void iter(T& arr, U len, V fun)
+template <class T>
+void iter(T* arr, int len, void (*fun)(T& arr))
 {
-	
+	for (int i = 0; i < len; i++)
+		fun(arr[i]);
 }
 
 #endif

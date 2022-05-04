@@ -1,10 +1,10 @@
-NAME	=	_ex01
+NAME	=	_ex02
 CC		=	c++
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
 SRCS	=	main.cpp
 OBJS	=	${SRCS:.cpp=.o}
 RM		=	rm -rf
-HEADERS	=	iter.hpp
+HEADERS	=	Array.hpp
 
 all: ${NAME}
 
